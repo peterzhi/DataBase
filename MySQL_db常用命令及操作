@@ -1,8 +1,10 @@
 MySQL————————
-查询mysql版本：mysqladmin --version
+查询mysql版本：mysqladmin --version  /mysql>> select version();
 开启mysql服务：net start xxx(数据库服务名称)
 登录mysql：mysql -u root -p，并输入密码
 查看数据库：show databases;
 使用指定库：use xxx;
 查看库表：show tables;
 查询表的所有字段属性：show columns from xxx(表名);
+添加mysql驱动:去下载mysql-connector-java-8.0.27的zip包，然后复制对应.jar文件的路径为driver library即可进行text connection.
+查看表里的字段：desc xxx;
