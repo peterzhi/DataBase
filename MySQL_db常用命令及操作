@@ -7,4 +7,13 @@ MySQL————————
 查看库表：show tables;
 查询表的所有字段属性：show columns from xxx(表名);
 添加mysql驱动:去下载mysql-connector-java-8.0.27的zip包，然后复制对应.jar文件的路径为driver library即可进行text connection.
-查看表里的字段：desc xxx;
+查看表里的字段：desc xxx(table_name);
+
+建表：(在mysql命令中)
+mysql> CREATE TABLE xxx(
+    -> name varchar(20) primary key,
+    -> age integer(11),
+    -> birth date,
+    -> number float(10),
+    -> key (age)
+    -> );
