@@ -8,6 +8,7 @@ MySQL————————
 查询表的所有字段属性：show columns from xxx(表名);
 添加mysql驱动:去下载mysql-connector-java-8.0.27的zip包，然后复制对应.jar文件的路径为driver library即可进行text connection.
 查看表里的字段：desc xxx(table_name);
+删除表中的所有记录：delete from table xxx;
 
 建表：(在mysql命令中)
 mysql> CREATE TABLE xxx(
