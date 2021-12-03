@@ -11,6 +11,8 @@ MySQL————————
 删除表中的每行所有记录（不适合量删）：delete from xxx;
 删除表中数据，保留结构，无法撤销：TRUNCATE TABLE xxx;
 删表（不保留，全删）：DROP TABLE xxx;
+删除约束：alter table table_name drop primary key;
+新建主键约束：alter table table_name add primary key(col_name,...);
 
 建表：(在mysql命令中)
 mysql> CREATE TABLE xxx(
