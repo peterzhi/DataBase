@@ -9,8 +9,8 @@ MySQL————————
 添加mysql驱动:去下载mysql-connector-java-8.0.27的zip包，然后复制对应.jar文件的路径为driver library即可进行text connection.
 查看表里的字段：desc xxx(table_name);
 删除表中的每行所有记录（不适合量删）：delete from xxx;
-删除表中数据，保留结构：TRUNCATE TABLE xxx;
-删表：DROP TABLE xxx;
+删除表中数据，保留结构，无法撤销：TRUNCATE TABLE xxx;
+删表（不保留，全删）：DROP TABLE xxx;
 
 建表：(在mysql命令中)
 mysql> CREATE TABLE xxx(
